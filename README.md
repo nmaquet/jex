@@ -71,7 +71,7 @@ As seen above, Jex code is pretty concise. Also, an interesting consequence of n
 
 **But... but... what if I do need two values of the same type ?**
 
-Obviously some methods will actually require more than value of the same type, so what gives? In these case, you can artificially introduce subtypes to act as surrogate variables. You can even define subtypes directly into method argument lists.
+Obviously some methods will actually require more than value of the same type, so what gives? In these cases, you can artificially introduce subtypes to act as surrogate variables. You can even define subtypes directly into method argument lists.
 
 ```
 def haveSameFirstName(ClientA < Client, ClientB < Client): Boolean
