@@ -124,8 +124,6 @@ This means you don't need to remember parameter order when learning a new API; c
 
 A direct consequence of undordered argument lists is that currying can also be done in any order. None of that Haskell [`flip` nonsense](http://hackage.haskell.org/package/base-4.8.1.0/docs/Prelude.html#v:flip) in Jex!
 
-# Closed scoping
-
 
 
 
