@@ -19,7 +19,7 @@ Jex (*one* in Gypsy) is an experimental programming language that explores some 
 
 On the spectrum of weak vs strong typing, Jex is a *very* strongly typed language, and even turns it up to eleven.
 
-**As a rule, primitive types should never appear in any type definitions**.
+**As a rule, primitive and standard library types should never appear in any type definitions**.
 
 Idiomatic Jex code builds type definitions that are as precise as possible, given the application domain.
 <br>For example (`<` means `extends`):
