@@ -11,7 +11,7 @@ Jex (*one* in Gypsy) is an experimental programming language that explores some 
 * I'm doing this 100% for fun, and I will most probably abandon this project in a week or so.
 
 # FAQ
-* **How far along is this? Where's the source?** Jex is currently in the armchair design phase, there isn't code yet.
+* **How far along is this? Where's the source?** Jex is currently in the armchair design phase, there isn't any code yet.
 <br>Hey, at least it's bug-free!
 * **Can I contribute?** Yes please. I'm keen to collaborate on this, just flick me a pull request.
 
