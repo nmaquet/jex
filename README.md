@@ -13,7 +13,7 @@ Jex (*one* in Gypsy) is an experimental programming language that explores some 
 # FAQ
 * **How far along is this? Where's the source?** Jex is currently in the armchair design phase, there isn't any code yet.
 <br>Hey, at least it's bug-free!
-* **Can I contribute?** Yes please. I'm keen to collaborate on this, just flick me a pull request.
+* **Can I contribute?** Yes please. I'm keen to collaborate on this; just flick me a pull request.
 
 # Hyper typing
 
