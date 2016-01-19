@@ -40,7 +40,7 @@ Representing concrete application-domain values with raw primitive types is an a
 
 Jex's most radical idea is a very strong (crippling, even) limitation on how types can be used:
 
-**Jex dissallows having more that one value of a type in a scope.**
+**Jex disallows having more that one value of a type in a scope.**
 
 Crazy right? I know. This limitation may seem radical and hard to work with (and it some ways, it is) but it also brings a suprising amout of very useful benefits, as will hopefully become clear.
 
