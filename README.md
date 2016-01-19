@@ -66,7 +66,7 @@ As seen above, Jex code is pretty concise. Also, an interesting consequence of n
 
 **But... but... what if I do need two values of the same type ?**
 
-Obviously some methods will actually require more than value of the same type, so what gives? In these case, you can artificially introduce subtypes to act as surrogate variables. You can even define subtypes directly into method argument lists! 
+Obviously some methods will actually require more than value of the same type, so what gives? In these case, you can artificially introduce subtypes to act as surrogate variables. You can even define subtypes directly into method argument lists.
 
 ```
 def haveSameFirstName(ClientA < Client, ClientB < Client): Boolean
@@ -78,13 +78,35 @@ def plus(LeftInteger < Integer, RightInteger < Integer): Integer
 
 Easy enough. Note that since Jex does not have an assignment operator, it breaks free of C's `==` nonsense (and certainly of Javascript's `===` atrocity) and uses `=` to denote the equality test. Shout-out to all the Pascal lovers out there.
 
-# (Co-)domain identical functions exception
+# Value consumption scoping rule
+
+When a type appears both in the argument list and in the return type, *Jex consumes the input value from the scope and replaces it with the output value*. This is better understood with an example:
+
+```
+	def femaleDevelopersOver30(List[Person]): List[Person]
+		List[Person].filter(_.sex = Female)
+		List[Person].filter(_.age > Years(30))
+		List[Person].filter(_.jobTitle = JobTitle("developer"))
+```
+
+There are four distinct values of type `List[Person]` in the method above, and each call to `filter` consumes and returns a new one. Also notice that Jex stole Scala's syntax for (anyonimous functions)[http://docs.scala-lang.org/tutorials/tour/anonymous-function-syntax.html].
+
+# Implicit self
+
+When unambiguous and appropriate (i.e. when it enhances readability) Jex allows the ommission of the self value in method calls. The idiomatic way of writing `femaleDevelopersOver30` is actually:
+
+```
+def femaleDevelopersOver30(List[Person]): List[Person]
+	filter(_.sex = Female)
+	filter(_.age > Years(30))
+	filter(_.jobTitle = JobTitle("developer"))
+```
+
+So pretty :heart:
 
 # Orderless argument lists
 
 # Orderless currying 
-
-# Implicit self
 
 # Closed scoping
 
