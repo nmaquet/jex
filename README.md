@@ -93,7 +93,7 @@ There are four distinct values of type `List[Person]` in the method above, and e
 
 # Implicit self
 
-When unambiguous and appropriate (i.e. when it enhances readability) Jex allows the ommission of the self value in method calls. The idiomatic way of writing `femaleDevelopersOver30` is actually:
+When unambiguous and appropriate (i.e. when it enhances readability) Jex allows the omission of the self value in method calls. The idiomatic way of writing `femaleDevelopersOver30` is actually:
 
 ```
 def femaleDevelopersOver30(List[Person]): List[Person]
