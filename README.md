@@ -104,6 +104,17 @@ def femaleDevelopersOver30(List[Person]): List[Person]
 
 So pretty :heart:
 
+A more idiomatic version of `getWidget` would be:
+
+```
+def getWidget(WidgetId, Connection): Widget
+    new PreparedStatement("select * from widgets where id = ?")
+    setLong(WidgetId.toLong)
+    executeQuery()
+    ResultSet.next()
+    new Widget(ResultSet)
+```
+
 # Orderless argument lists
 
 # Orderless currying 
