@@ -1,7 +1,7 @@
 # Jex
 An experimental language with a fresh look at functional OOP.
 
-Jex (*one* in Gypsy) is an experimental programming language that explores some fresh ideas around functional and object-oriented programming. Over the past two decades I've spent many long hours daydreaming about new patterns and paradigms for programming, and Jex is my first attempt at making something out of those various ideas.
+Jex (*one* in Gypsy) is an experimental programming language that explores some fresh ideas around functional and object-oriented programming. Over the past two decades, I've spent many long hours daydreaming about new patterns and paradigms for programming, and Jex is my first attempt at making something out of those various ideas.
 
 ## Disclaimers <sup>please<sup>be<sup>nice</sup></sup></sup>
 
