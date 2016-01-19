@@ -107,7 +107,7 @@ def femaleDevelopersOver30(List[Person]): List[Person]
 	filter(_.jobTitle = JobTitle("developer"))
 ```
 
-So pretty :heart:
+So pretty. :heart:
 
 A more idiomatic version of `getWidget` would be:
 
