@@ -89,7 +89,7 @@ When a type appears both in the argument list and in the return type, *Jex consu
 		List[Person].filter(_.jobTitle = JobTitle("developer"))
 ```
 
-There are four distinct values of type `List[Person]` in the method above, and each call to `filter` consumes and returns a new one. Also notice that Jex stole Scala's syntax for (anyonimous functions)[http://docs.scala-lang.org/tutorials/tour/anonymous-function-syntax.html].
+There are four distinct values of type `List[Person]` in the method above, and each call to `filter` consumes and returns a new one. Also notice that Jex stole Scala's syntax for [anonymous functions](http://docs.scala-lang.org/tutorials/tour/anonymous-function-syntax.html).
 
 # Implicit self
 
