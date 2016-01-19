@@ -76,7 +76,7 @@ def plus(LeftInteger < Integer, RightInteger < Integer): Integer
 	...
 ```
 
-Easy enough. Note that since Jex does not have an assignment operator, it breaks free of C's `==` nonsense (and certainly of Javascript's `===` atrocity) and uses `=` to denote the equality test. Shout out to all the Pascal lovers out there.
+Easy enough. Note that since Jex does not have an assignment operator, it breaks free of C's `==` nonsense (and certainly of Javascript's `===` atrocity) and uses `=` to denote the equality test. Shout-out to all the Pascal lovers out there.
 
 # (Co-)domain identical functions exception
 
