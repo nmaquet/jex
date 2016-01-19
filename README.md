@@ -16,18 +16,18 @@ On the spectrum of weak vs strong typing, Jex is a *very* strongly typed languag
 
 **As a rule, primitive types should never appear in any type definitions**.
 
-Idiomatic Jex code builds type definitions that are as precise as possible, given the application domain. For example:
+Idiomatic Jex code builds type definitions that are as precise as possible, given the application domain. For example (`<` means `extends`):
 
 ```
-class NonNegativeInteger extends Integer
+class NonNegativeInteger < Integer
 
-class NonNegativeFloat extends Float
+class NonNegativeFloat < Float
 
-class Millimeters extends NonNegativeFloat
+class Millimeters < NonNegativeFloat
 
-class DegreesCelcius extends Float
+class DegreesCelcius < Float
 
-class ArrayIndex extends NonNegativeInteger
+class ArrayIndex < NonNegativeInteger
 
 ...
 ```
@@ -62,6 +62,20 @@ def getWidget(WidgetId, Connection): Widget
 ```
 
 As seen above, Jex code is pretty concise. Also, an interesting consequence of not having variables is that *Jex does not have an assignment operator*. 
+
+**But... but... what if I do need two values of the same type ?**
+
+Obviously some methods will actually require more than value of the same type, so what gives? In these case, you can artificially introduce subtypes to act as surrogate variables. You can even define subtypes directly into method argument lists! 
+
+```
+def haveSameFirstName(ClientA < Client, ClientB < Client): Boolean
+	ClientA.firstName = ClientB.firstName
+
+def plus(LeftInteger < Integer, RightInteger < Integer): Integer
+	...
+```
+
+Easy enough. Note that since Jex does not have an assignment operator, it breaks free of C's `==` nonsense (and certainly of Javascript's `===` atrocity) and uses `=` to denote the equality test. Shout out to all the Pascal lovers out there.
 
 # (Co-)domain identical functions exception
 
