@@ -35,7 +35,7 @@ class ArrayIndex < NonNegativeInteger
 
 Representing concrete application-domain values with raw primitive types is an anti-pattern and a source of numerous bugs. Jex solves this from two opposite angles:
 * Jex makes defining new types really easy, reducing the overhead of having to define them.
-* Jex makes using non-specific types really hard thanks to *type unicity by scope* (see below).
+* Jex makes using unprecise types really hard thanks to *type unicity by scope* (see below).
 
 # Type unicity by scope
 
