@@ -50,7 +50,7 @@ Jex's second-most radical idea is that, for better or worse, it removes one conc
 
 **Jex does not have variables. Values are always referred to through their type.**
 
-Again, pretty crazy. The goal here is to make code a lot more concise. Dynamically typed languages are a lot less verbose than statically typed ones (consider Java's `Widget widget = WidgetFactory.createWidget()`... *shudders*). The thing is, Jex types are so precise that doing away with variables altogether is relatively easy and makes code super precise. For example:
+Again, pretty crazy. The goal here is to make code a lot more concise. Dynamically typed languages are a lot less verbose than statically typed ones (consider Java's `Widget widget = WidgetFactory.createWidget()`... *shudders*). The thing is, Jex types are so precise that doing away with variables altogether is relatively easy and makes code very concise. For example:
 
 ```
 def getWidget(WidgetId, Connection): Widget
