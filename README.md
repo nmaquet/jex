@@ -10,6 +10,10 @@ Jex (*one* in Gypsy) is an experimental programming language that explores some 
 * The ideas presented here may be described in other forms in prior art. I'm not aware of this being the case (as I haven't looked) but I'd be keen to know of any similar efforts.
 * I'm doing this 100% for fun, and I will most probably abandon this project in a week or so.
 
+# FAQ
+* **How far along is this? Where's the source?** Jex is currently in the armchair design phase, there isn't code yet. Hey, at least it's bug-free!
+* **Can I contribute?** Yes please. I'm keen to collaborate on this, just flick me a pull request.
+
 # Hyper typing
 
 On the spectrum of weak vs strong typing, Jex is a *very* strongly typed language, and even turns it up to eleven.
