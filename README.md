@@ -17,7 +17,7 @@ On the spectrum of weak vs strong typing, Jex is a *very* strongly typed languag
 **As a rule, primitive types should never appear in any type definitions**.
 
 Idiomatic Jex code builds type definitions that are as precise as possible, given the application domain.
-For example (`<` means `extends`):
+<br>For example (`<` means `extends`):
 
 ```
 class NonNegativeInteger < Integer
