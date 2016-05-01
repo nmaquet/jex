@@ -1,0 +1,18 @@
+begin class FizzBuzz
+
+private def divisible(Integer, By = Integer):
+  Integer % By = 0
+
+def fizzbuzz() -> Unit:
+  range(1, 100)
+  forEach (Integer) =>
+    if divisible(_, By(3)) and divisible(_, By(5)):
+      println("FizzBuzz")
+    else if divisible(_, By(3)):
+      println("Fizz")
+    else if divisible(_, By(5)):
+      println("Buzz")
+    else:
+      println(_)
+
+end class
