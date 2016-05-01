@@ -46,12 +46,12 @@ type Price = Float
 type Discount = Float
 type Basket = Map[Book, Quantity]
 
-def basePrice() -> Integer: 8.00
+private def basePrice() -> Integer: 8.00
 
-def differentBooks(Basket) -> Set[Book]:
+private def differentBooks(Basket) -> Set[Book]:
   keys().toSet()
 
-def takeBooks(Basket, Array[Book]) -> Basket:
+private def takeBooks(Basket, Array[Book]) -> Basket:
   if Array.isEmpty:
     Basket
   else:
