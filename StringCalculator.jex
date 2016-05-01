@@ -1,14 +1,14 @@
 begin class StringCalculator
 
-type Delimiter < Char
+type Delimiter = Char
 
 private def checkNoNegatives(Array<Integer>) -> Unit:
   filter((Integer) => Integer < 0)
-  if (size() > 1):
+  if size() > 1:
     throw ValueError("No negatives allowed: ${Array.toString()}")
 
 private def add(Delimiter, String) -> Integer:
-  if (equals("")):
+  if equals(""):
     0
   else:
     split(Delimiter, '\n')
@@ -17,7 +17,7 @@ private def add(Delimiter, String) -> Integer:
     sum()
 
 def add(String) -> Integer:
-  if (startsWith("//")):
+  if startsWith("//"):
     add(at(2), drop(4))
   else:
     add(',', String)
